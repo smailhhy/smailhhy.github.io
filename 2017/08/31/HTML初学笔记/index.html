@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Life">
 <meta property="og:description" content="HTML简介 html 是指超文本标记语言，不是编程语言 Html5  ：需要熟练掌握快捷键  HTML的新特性：  用于绘画的canvas标签；用于媒介回放的video和audio元素对本地离线存储的更好支持新的特殊元素：article、footer、header、nav、section新的表单控件：calendar、date、time、email、url、searth浏览器的支持：Safari">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-31T07:29:33.925Z">
+<meta property="og:updated_time" content="2017-08-31T09:07:00.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML初学笔记">
 <meta name="twitter:description" content="HTML简介 html 是指超文本标记语言，不是编程语言 Html5  ：需要熟练掌握快捷键  HTML的新特性：  用于绘画的canvas标签；用于媒介回放的video和audio元素对本地离线存储的更好支持新的特殊元素：article、footer、header、nav、section新的表单控件：calendar、date、time、email、url、searth浏览器的支持：Safari">
@@ -376,11 +376,12 @@
 </blockquote>
 </li>
 </ul>
-<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><ul>
+<h4 id="注"><a href="#注" class="headerlink" title="注"></a>注</h4><ul>
 <li>使用软件  Intellij IDEA -Static Web</li>
 <li>新建-New-HTML File(不需要写后缀名）</li>
 <li>需要学习的技能 XHTML、CSS3.JavaScript、jQuery:jQuery-UI、jQuery-Mobile</li>
 </ul>
+<hr>
 <h1 id="HTML-基础"><a href="#HTML-基础" class="headerlink" title="HTML 基础"></a>HTML 基础</h1><blockquote>
 <p>HTML5的声明：&lt;!DOCTYPE html&gt;<br>HTML基础标签：head、body<br>HTML标题：<code>&lt;h1&gt;</code>…<code>&lt;h6&gt;</code>等标签进行定义           {标题字号大小不一样}<br>HTML段落:<code>&lt;p&gt;</code>标签定义段落<br>HTML链接:<code>&lt;a&gt;</code>标签定义连接      <a href="地址"><br>HTML图像:<code>&lt;img&gt;</code>标签定义图像&lt;img src=”imges/html.png&gt;</a></p>
 </blockquote>
@@ -416,6 +417,7 @@
 <h3 id="HTML格式化效果"><a href="#HTML格式化效果" class="headerlink" title="HTML格式化效果:"></a>HTML格式化效果:</h3><blockquote>
 <p><code>&lt;b&gt;</code>定义粗体文字<br> <code>&lt;big&gt;</code>定义大号字<br> <code>&lt;em&gt;</code>定义着重文字<br> <code>&lt;i&gt;</code>定义斜体字<br> <code>&lt;small&gt;</code>定义小号字<br> <code>&lt;strong&gt;</code>定义加重语气<br> <code>&lt;sub&gt;</code>定义下标字<br> <code>&lt;sup&gt;</code>定义上标字<br> <code>&lt;ins&gt;</code>定义插入字<br> <code>&lt;del&gt;</code>定义删除字</p>
 </blockquote>
+<hr>
 <h3 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a>HTML样式</h3><ul>
 <li>标签:<br><code>&lt;style&gt;</code>: 样式定义<br><code>&lt;link&gt;</code>:资源引用</li>
 <li>属性:<br><code>rel=&quot;stylesheet&quot;</code>:外部样式表<br><code>type=“text/css&quot;</code>:引入文档类型<br><code>margin-left</code>:边距</li>
@@ -426,6 +428,59 @@
 <p><code>&lt;style type= &quot;text/css&quot;&gt;</code><br>body {background-color:red}<br>p {margin-left:20px}<br><code>&lt;/style&gt;</code></p>
 </blockquote>
 <p><strong>内联样式表</strong><br><code>&lt;p style= &quot;color:red&quot;&gt;</code></p>
+<h3 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h3><h4 id="连接数据"><a href="#连接数据" class="headerlink" title="连接数据:"></a>连接数据:</h4><blockquote>
+<p>文本连接:如 <code>&lt;a href=&quot;http://www.jike.com&quot;&gt;点击&lt;/a&gt;</code><br>图片链接:如 <code>&lt;a href=&quot;http://www.jike.com&quot;&gt;</code><br><code>&lt;img src=&quot;html.png&quot;&gt;</code><br><code>&lt;/a&gt;</code><br>如果图片大小不合适，可以改变其大小: <code>&lt;img src=&quot;html.png&quot; width=&quot;200px&quot; height=&quot;200px&quot; alt=&quot;html5logo&quot;&gt;</code></p>
+</blockquote>
+<h4 id="img标签属性"><a href="#img标签属性" class="headerlink" title="img标签属性:"></a>img标签属性:</h4><p>alt:替换文本属性<br>width:宽<br>height:高</p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性:"></a>属性:</h4><p>href属性:指向另一个文档的链接<br>name:创建文档内的链接</p>
+<blockquote>
+<p><code>&lt;a name=&quot;tips&quot;&gt;hello&lt;/a&gt;</code><br><a href="#tips">跳转到hello</a></p>
+</blockquote>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格:"></a>表格:</h4><hr>
+<table>
+<thead>
+<tr>
+<th><code>&lt;table&gt;</code></th>
+<th>定义表格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;caption&gt;</code></td>
+<td>定义表格标题</td>
+</tr>
+<tr>
+<td><code>&lt;tr&gt;</code></td>
+<td>定义表格的行</td>
+</tr>
+<tr>
+<td><code>&lt;td&gt;</code></td>
+<td>定义表格的单元</td>
+</tr>
+<tr>
+<td><code>&lt;thead&gt;</code></td>
+<td>定义表格的页眉</td>
+</tr>
+<tr>
+<td><code>&lt;tbody&gt;</code></td>
+<td>定义表格的主体</td>
+</tr>
+<tr>
+<td><code>&lt;tfoot&gt;</code></td>
+<td>定义表格的页脚</td>
+</tr>
+<tr>
+<td><code>&lt;col&gt;</code></td>
+<td>定义表格的列属性</td>
+</tr>
+<tr>
+<td><code>&lt;th&gt;</code></td>
+<td>定义表头</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>定义边框  border=1<br>在最外层加一个<code>&lt;p&gt;表格&lt;/p&gt;</code> 这是加一个标题</p>
 
       
     </div>
@@ -606,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML简介"><span class="nav-number">1.</span> <span class="nav-text">HTML简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注"><span class="nav-number">1.0.1.</span> <span class="nav-text">注</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-基础"><span class="nav-number">2.</span> <span class="nav-text">HTML 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML元素"><span class="nav-number">2.0.1.</span> <span class="nav-text">HTML元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML属性"><span class="nav-number">2.0.2.</span> <span class="nav-text">HTML属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML格式化效果"><span class="nav-number">2.0.3.</span> <span class="nav-text">HTML格式化效果:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML样式"><span class="nav-number">2.0.4.</span> <span class="nav-text">HTML样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种样式表插入方法"><span class="nav-number">2.0.5.</span> <span class="nav-text">三种样式表插入方法:</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML简介"><span class="nav-number">1.</span> <span class="nav-text">HTML简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">注</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-基础"><span class="nav-number">2.</span> <span class="nav-text">HTML 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML元素"><span class="nav-number">2.0.1.</span> <span class="nav-text">HTML元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML属性"><span class="nav-number">2.0.2.</span> <span class="nav-text">HTML属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML格式化效果"><span class="nav-number">2.0.3.</span> <span class="nav-text">HTML格式化效果:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML样式"><span class="nav-number">2.0.4.</span> <span class="nav-text">HTML样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种样式表插入方法"><span class="nav-number">2.0.5.</span> <span class="nav-text">三种样式表插入方法:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML链接"><span class="nav-number">2.0.6.</span> <span class="nav-text">HTML链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#连接数据"><span class="nav-number">2.0.6.1.</span> <span class="nav-text">连接数据:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img标签属性"><span class="nav-number">2.0.6.2.</span> <span class="nav-text">img标签属性:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性"><span class="nav-number">2.0.6.3.</span> <span class="nav-text">属性:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表格"><span class="nav-number">2.0.6.4.</span> <span class="nav-text">表格:</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
