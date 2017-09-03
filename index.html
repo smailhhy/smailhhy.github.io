@@ -433,7 +433,25 @@
 </li>
 </ul>
 <hr>
-
+<h4 id="表单与PHP交互"><a href="#表单与PHP交互" class="headerlink" title="表单与PHP交互"></a>表单与PHP交互</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;表单与PHP进行交互&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">     &lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</div><div class="line">            用户名：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;</div><div class="line">            密    码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;</div><div class="line">            &lt;br/&gt;</div><div class="line">             &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>把php里面的地址放到action后面，method中get地址栏显示密码和用户名，post不会。</p>
+<h3 id="HTML框架"><a href="#HTML框架" class="headerlink" title="HTML框架"></a>HTML框架</h3><ul>
+<li>标签框架(frame)</li>
+<li>框架集标签(<code>&lt;frameset&gt;</code>):<blockquote>
+<p>框架集标签定义如何将窗口分割为框架<br>每一个frameset定义一系列行或列<br>rows/cols的值规定了每行或者每列占据屏幕的面积</p>
+</blockquote>
+</li>
+<li>常用标签：<br>noresize:固定框架大小<br>cols: 列<br>rows: 行</li>
+<li>内联框架：iframe</li>
+</ul>
+<p>创建三个新页面，设置不同颜色，用src引入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;框架&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">&lt;frameset cols=&quot;20%,50%,30%&quot;&gt;</div><div class="line">    &lt;frame src=&quot;framea.html&quot;&gt;&lt;/frame&gt;</div><div class="line">    &lt;frame src=&quot;frameb.html&quot;&gt;&lt;/frame&gt;</div><div class="line">    &lt;frame src=&quot;framec.html&quot;&gt;&lt;/frame&gt;</div><div class="line">&lt;/frameset&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>内联框架<blockquote>
+<p>taeget =_self 是在自己本身的页面打开<br>taget=_blank 是在一个新的页面打开<br>taget=_top 在顶级页面打开<br>taget=_parent 在负极页面打开</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;框架&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">        &lt;a href=&quot;http://jike.com&quot; target=&quot;_self&quot;&gt;即可&lt;/a&gt;</div><div class="line">&lt;iframe src=&quot;framea.html&quot; frameborder=&quot;0&quot; width=&quot;400px&quot; height=&quot;400px&quot;&gt;</div><div class="line">&lt;/iframe&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
           
         
       
