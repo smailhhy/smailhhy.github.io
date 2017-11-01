@@ -369,67 +369,27 @@
       
         
           
-            <h3 id="XHTML简介"><a href="#XHTML简介" class="headerlink" title="XHTML简介"></a>XHTML简介</h3><ul>
-<li>XHTML元素语法：<blockquote>
-<p>元素必须正确嵌套<br>元素必须始终关闭<br>元素必须小写<br>文档必须有一个根元素</p>
-</blockquote>
-</li>
-<li>XHTML属性语法规则：<blockquote>
-<p>属性必须小写<br>属性值必须用引号包围<br>属性最小化禁止</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="HTML5和HTML4的区别："><a href="#HTML5和HTML4的区别：" class="headerlink" title="HTML5和HTML4的区别："></a>HTML5和HTML4的区别：</h4><ul>
-<li>新增的元素<br>结构元素：<blockquote>
-<p>section:内容块，与h1~h6同时使用。表示文档的结构<br>article:表示一块与上下文不相关的内容<br>aside:表示article内容之外的相关的辅助信息<br>header:页面中的内容区域块，通常表示标题<br>hgroup:表示整个页面或一个内容块的标题进行结合<br>footer:表示页面中的部分，通常表示区域块的底部<br>nav:表示页面中的导航链接部分<br>figure:主体重内容的单元</p>
-</blockquote>
-</li>
-<li>新增其他元素：<blockquote>
-<p>vidio:定义视频<br>audio:定义音频<br>canvas：画布，表示图形<br>等等</p>
-</blockquote>
-</li>
-<li>新增input元素类型：<br>email:地址<br>url:文本框地址<br>number:数字<br>range:输入框内数字的范围值<br>Date pickers:日历时间</li>
-<li>废除的元素：<blockquote>
-<p>不再使用frame框架<br>只有部分浏览器支持的元素<br>其他</p>
-</blockquote>
-</li>
-</ul>
-<h1 id="新增的属性："><a href="#新增的属性：" class="headerlink" title="新增的属性："></a>新增的属性：</h1><blockquote>
-<p>表单相关的属性<br>链接相关的属性<br>其他属性</p>
-</blockquote>
-<h3 id="全局属性：可以对任何元素都使用"><a href="#全局属性：可以对任何元素都使用" class="headerlink" title="全局属性：可以对任何元素都使用"></a>全局属性：可以对任何元素都使用</h3><ul>
-<li>contenteditable属性：<blockquote>
-<p>允许编辑内容ontenteditable或者=”true”,<br>contenteditable=”false”为不可编辑</p>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">        &lt;body&gt;</div><div class="line">        &lt;h1&gt;可编辑列表&lt;/h1&gt;</div><div class="line">            &lt;ul contenteditable&gt;</div><div class="line">            &lt;li&gt;列表1&lt;/li&gt;</div><div class="line">            &lt;li&gt;列表2&lt;/li&gt;</div><div class="line">            &lt;li&gt;列表3&lt;/li&gt;</div><div class="line">            &lt;/ul&gt;</div><div class="line"></div><div class="line">        &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<ul>
-<li><p>designmode属性：用来指定整个页面是否可编辑，当页面可编辑时，contenteditable元素都为可编辑，属性值有两个：off和on</p>
-</li>
-<li><p>hidden属性：通知浏览器不渲染该元素，元素为true时不可建状态，false时为可建状态</p>
-</li>
-<li>spellcheck属性：对用户输入的内容进行拼写和语法的检查</li>
-<li>tabindex属性：表示该内容是第几个被访问到的</li>
-</ul>
-<h3 id="新增主体结构元素："><a href="#新增主体结构元素：" class="headerlink" title="新增主体结构元素："></a>新增主体结构元素：</h3><ul>
-<li>article元素：可以嵌套使用，可以做插件</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">    &lt;head lang=&quot;en&quot;&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;article元素&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line"> &lt;body&gt;</div><div class="line">         &lt;article&gt;</div><div class="line">                       &lt;header&gt;</div><div class="line">                 &lt;h1&gt;极客学院&lt;/h1&gt;</div><div class="line">                 &lt;p&gt;欢迎&lt;/p&gt;</div><div class="line">                       &lt;/header&gt;</div><div class="line">         &lt;article&gt;</div><div class="line">                  &lt;header&gt;作者&lt;/header&gt;</div><div class="line">                  &lt;p&gt;评论&lt;/p&gt;</div><div class="line">                  &lt;footer&gt;time&lt;/footer&gt;</div><div class="line">         &lt;/article&gt;</div><div class="line">            &lt;footer&gt;</div><div class="line">                    &lt;p&gt;底部&lt;/p&gt;</div><div class="line">            &lt;/footer&gt;</div><div class="line">         &lt;/article&gt;</div><div class="line">&lt;article&gt;</div><div class="line">            &lt;h1&gt;内嵌页面&lt;/h1&gt;</div><div class="line">             &lt;object&gt;</div><div class="line">                 &lt;embed src=&quot;#&quot; height=&quot;400&quot; width=&quot;500&quot;&gt;&lt;/embed&gt;</div><div class="line">             &lt;/object&gt;</div><div class="line">&lt;/article&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<p><strong>embed标签定义嵌入的内容，比如插件，标签必须有src属性</strong></p>
-<ul>
-<li>section元素：<blockquote>
-<p>对于网站或应用程序中页面上的内容进行分块，section元素通常由内容或其标题组成，但section元素并非一个普通的容器元素；当一个容器需要被直接定义样式或者通过脚本定义行为时，推荐使用div.</p>
-</blockquote>
-</li>
-<li>nav元素：用作页面导航的连接组<blockquote>
-<p>传统导航条<br>侧边导航栏<br>页内导航<br>翻页操作</p>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">    &lt;head lang=&quot;en&quot;&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;nav元素&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line"> &lt;body&gt;</div><div class="line">         &lt;nav&gt;</div><div class="line">             &lt;ul&gt;</div><div class="line">                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;主页&lt;/a&gt;&lt;/li&gt;</div><div class="line">                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;开发文档&lt;/a&gt;&lt;/li&gt;</div><div class="line">             &lt;/ul&gt;</div><div class="line">         &lt;/nav&gt;</div><div class="line">         &lt;article&gt;</div><div class="line">             &lt;header&gt;</div><div class="line">                 &lt;h1&gt;HTML5与CSS3的历史&lt;/h1&gt;</div><div class="line">                 &lt;nav&gt;</div><div class="line">                     &lt;ul&gt;</div><div class="line">                         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS3的历史&lt;/a&gt;&lt;/li&gt;</div><div class="line">                         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HTML5的历史&lt;/a&gt;&lt;/li&gt;</div><div class="line">                     &lt;/ul&gt;</div><div class="line">                 &lt;/nav&gt;</div><div class="line">             &lt;/header&gt;</div><div class="line">             &lt;section&gt;</div><div class="line">                 &lt;h1&gt;CSS3的历史&lt;/h1&gt;</div><div class="line">                 &lt;p&gt;...&lt;/p&gt;</div><div class="line">             &lt;/section&gt;</div><div class="line">             &lt;section&gt;</div><div class="line">                 &lt;h1&gt;HTML5的历史&lt;/h1&gt;</div><div class="line">                 &lt;p&gt;...&lt;/p&gt;</div><div class="line">             &lt;/section&gt;</div><div class="line">             &lt;footer&gt;</div><div class="line">                 &lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;</div><div class="line">                 &lt;a href=&quot;#&quot;&gt;修改&lt;/a&gt;</div><div class="line">             &lt;/footer&gt;</div><div class="line">         &lt;/article&gt;</div><div class="line">         &lt;footer&gt;</div><div class="line">             &lt;p&gt;&lt;small&gt;版权声明：&lt;/small&gt;&lt;/p&gt;</div><div class="line">         &lt;/footer&gt;</div><div class="line"> &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+          XHTML简介
+XHTML元素语法：
+元素必须正确嵌套元素必须始终关闭元素必须小写文档必须有一个根元素
 
-          
+
+XHTML属性语法规则：
+属性必须小写属性值必须用引号包围属性最小化禁止
+
+
+
+HTML5和HTML4的区别：
+新增的元素结构元素：
+section:内容块，与h1~h6同时使用。表示文档的结
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/04/HTML初学笔记四/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -547,95 +507,44 @@
       
         
           
-            <h3 id="HTML表单"><a href="#HTML表单" class="headerlink" title="HTML表单"></a>HTML表单</h3><ul>
-<li>表单用于获取不同类型的用户输入</li>
-<li>常用表单标签</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><code>&lt;form&gt;</code></th>
-<th>表单</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;input&gt;</code></td>
-<td>输入域</td>
-</tr>
-<tr>
-<td><code>&lt;textarea&gt;</code></td>
-<td>文本域</td>
-</tr>
-<tr>
-<td><code>&lt;label&gt;</code></td>
-<td>控制标签</td>
-</tr>
-<tr>
-<td><code>&lt;fieldset&gt;</code></td>
-<td>定义域</td>
-</tr>
-<tr>
-<td><code>&lt;legend&gt;</code></td>
-<td>域的标题</td>
-</tr>
-<tr>
-<td><code>&lt;select&gt;</code></td>
-<td>选择列表</td>
-</tr>
-<tr>
-<td><code>&lt;optgroup&gt;</code></td>
-<td>选项组</td>
-</tr>
-<tr>
-<td><code>&lt;option&gt;</code></td>
-<td>下拉列表中的选项</td>
-</tr>
-<tr>
-<td><code>&lt;button&gt;</code></td>
-<td>按钮</td>
-</tr>
-</tbody>
-</table>
-<h4 id="常用表单："><a href="#常用表单：" class="headerlink" title="常用表单："></a>常用表单：</h4><ul>
-<li><p>复选框</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;表单&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">      &lt;form&gt;</div><div class="line">      你喜欢的宠物？</div><div class="line">    狗&lt;input type=&quot;checkbox&quot;&gt;</div><div class="line">    猫&lt;input type=&quot;checkbox&quot;&gt;</div><div class="line">    兔子&lt;input type=&quot;checkbox&quot;&gt;</div><div class="line">      &lt;/form&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>单选按钮</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;br/&gt;</div><div class="line">   请选择您的性别：</div><div class="line">   男&lt;input type=&quot;radio&quot; name=&quot;sex&quot;&gt;</div><div class="line">   女&lt;input type=&quot;radio&quot; name=&quot;sex&quot;&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>下拉列表和创建按钮</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"> &lt;br/&gt;</div><div class="line">请选择常用网站：</div><div class="line"> &lt;select&gt;</div><div class="line">        &lt;option&gt;www.edu.cn&lt;/option&gt;</div><div class="line">        &lt;option&gt;www.google.cn&lt;/option&gt;</div><div class="line">    &lt;/select&gt;</div><div class="line">    &lt;input type=&quot;button&quot; value=&quot;按钮&quot;&gt;</div><div class="line">    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</div><div class="line">      &lt;/form&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>文本域<br>在<code>&lt;form&gt;</code>外填写<br><code>&lt;textarea cols=&quot;20&quot; rows=&quot;20&quot;&gt;</code>请填写个人信息<code>&lt;/textarea&gt;</code></p>
-</li>
-</ul>
-<hr>
-<h4 id="表单与PHP交互"><a href="#表单与PHP交互" class="headerlink" title="表单与PHP交互"></a>表单与PHP交互</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;表单与PHP进行交互&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">     &lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</div><div class="line">            用户名：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;</div><div class="line">            密    码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;</div><div class="line">            &lt;br/&gt;</div><div class="line">             &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<p>把php里面的地址放到action后面，method中get地址栏显示密码和用户名，post不会。</p>
-<h3 id="HTML框架"><a href="#HTML框架" class="headerlink" title="HTML框架"></a>HTML框架</h3><ul>
-<li>标签框架(frame)</li>
-<li>框架集标签(<code>&lt;frameset&gt;</code>):<blockquote>
-<p>框架集标签定义如何将窗口分割为框架<br>每一个frameset定义一系列行或列<br>rows/cols的值规定了每行或者每列占据屏幕的面积</p>
-</blockquote>
-</li>
-<li>常用标签：<br>noresize:固定框架大小<br>cols: 列<br>rows: 行</li>
-<li>内联框架：iframe</li>
-</ul>
-<p>创建三个新页面，设置不同颜色，用src引入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;框架&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">&lt;frameset cols=&quot;20%,50%,30%&quot;&gt;</div><div class="line">    &lt;frame src=&quot;framea.html&quot;&gt;&lt;/frame&gt;</div><div class="line">    &lt;frame src=&quot;frameb.html&quot;&gt;&lt;/frame&gt;</div><div class="line">    &lt;frame src=&quot;framec.html&quot;&gt;&lt;/frame&gt;</div><div class="line">&lt;/frameset&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<ul>
-<li>内联框架<blockquote>
-<p>taeget =_self 是在自己本身的页面打开<br>taget=_blank 是在一个新的页面打开<br>taget=_top 在顶级页面打开<br>taget=_parent 在负极页面打开</p>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;框架&lt;/title&gt;</div><div class="line">        &lt;/head&gt;</div><div class="line">        &lt;a href=&quot;http://jike.com&quot; target=&quot;_self&quot;&gt;即可&lt;/a&gt;</div><div class="line">&lt;iframe src=&quot;framea.html&quot; frameborder=&quot;0&quot; width=&quot;400px&quot; height=&quot;400px&quot;&gt;</div><div class="line">&lt;/iframe&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<h3 id="HTML背景"><a href="#HTML背景" class="headerlink" title="HTML背景"></a>HTML背景</h3><blockquote>
-<p>Background:设置背景图片<br>Bgcolor:设置背景颜色</p>
-</blockquote>
-<hr>
+          HTML表单
+表单用于获取不同类型的用户输入
+常用表单标签
 
-          
+
+
+
+&lt;form&gt;
+表单
+
+
+
+
+&lt;input&gt;
+输入域
+
+
+&lt;textarea&gt;
+文本域
+
+
+&lt;label&gt;
+控制标签
+
+
+&lt;fieldset&gt;
+定义域
+
+
+&lt;legen
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/03/HTML初学笔记三/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -753,72 +662,48 @@
       
         
           
-            <h2 id="HTML列表"><a href="#HTML列表" class="headerlink" title="HTML列表"></a>HTML列表</h2><table>
-<thead>
-<tr>
-<th><code>&lt;ol&gt;</code></th>
-<th>有序列表</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;ul&gt;</code></td>
-<td>无序列表</td>
-</tr>
-<tr>
-<td><code>&lt;li&gt;</code></td>
-<td>列表项</td>
-</tr>
-<tr>
-<td><code>&lt;dl&gt;</code></td>
-<td>列表</td>
-</tr>
-<tr>
-<td><code>&lt;dt&gt;</code></td>
-<td>列表项</td>
-</tr>
-<tr>
-<td><code>&lt;dd&gt;</code></td>
-<td>描述</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用标签:<code>&lt;ul&gt;</code>、<code>&lt;li&gt;</code><br>属性：</p>
-<ul>
-<li>disc(实体圆)</li>
-<li>circle(空心圆)</li>
-<li>square(方块实体)</li>
-</ul>
-<p><strong>方法<code>&lt;ul type=&quot;disc&quot;&gt;</code> (type类型)</strong></p>
-<h4 id="有序列表-默认显示1、2、3、4"><a href="#有序列表-默认显示1、2、3、4" class="headerlink" title="有序列表(默认显示1、2、3、4)"></a>有序列表(默认显示1、2、3、4)</h4><blockquote>
-<p>使用标签:<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code><br>属性：A、a、I、i、start</p>
-</blockquote>
-<ul>
-<li><code>&lt;ol start=&quot;10&quot;&gt;</code>(显示从10开始)</li>
-</ul>
-<h4 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h4><ul>
-<li>使用标签:  <code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code></li>
-</ul>
-<h4 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h4><ul>
-<li>使用标签:<code>&lt;dl&gt;</code>、<code>&lt;dt&gt;</code>、<code>&lt;dd&gt;</code></li>
-</ul>
-<h2 id="HTML块元素"><a href="#HTML块元素" class="headerlink" title="HTML块元素"></a>HTML块元素</h2><p><strong>注释快捷键：ctrl+/</strong></p>
-<ul>
-<li>HTML 区块元素<br>块级元素在浏览器显示时，通常会以新行来开始。<br>实例: <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code></li>
-<li>HTML 内联元素<br>内联元素在显示时通常不会以新行开始。<br>实例: <code>&lt;b&gt;</code>,<code>&lt;td&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></li>
-<li>HTML <code>&lt;div&gt;</code> 元素<br>HTML <code>&lt;div&gt;</code> 元素是块级元素，它可用于组合其他 HTML 元素的容器。(使用css)</li>
-<li>HTML <code>&lt;span&gt;</code> 元素<br>HTML <code>&lt;span&gt;</code> 元素是内联元素，可用作文本的容器</li>
-</ul>
-<h2 id="HTML布局"><a href="#HTML布局" class="headerlink" title="HTML布局"></a>HTML布局</h2><ul>
-<li><p>div 元素来创建多列布局(<code>&lt;div id=&quot;container&quot;&gt;</code>)<br>(<code>&lt;style type=&quot;text/css&quot;&gt;</code>)<br>didv#container{<br>  width:100%;<br>  height:950px;<br>  background-color:darkgray;<br>}</p>
-</li>
-<li><p><code>&lt;table&gt;</code> 元素布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">        &lt;title&gt;table布局&lt;/title&gt;</div><div class="line">&lt;body marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot;&gt;</div><div class="line">        &lt;table width=&quot;100%&quot; height=&quot;950px&quot; style=&quot;background-color:blue&quot;&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">            &lt;td width=&quot;100%&quot; height=&quot;10%&quot; style=&quot;background-color:aqua&quot; colspan=&quot;2&quot;&gt;头部&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">                &lt;td width=&quot;40%&quot; height=&quot;80%&quot; style=&quot;background-color:darkgray&quot;&gt;</div><div class="line">                    &lt;ul&gt;</div><div class="line">                        &lt;li&gt;苹果&lt;/li&gt;</div><div class="line">                        &lt;li&gt;香蕉&lt;/li&gt;</div><div class="line">                        &lt;li&gt;猕猴桃&lt;/li&gt;</div><div class="line">                    &lt;/ul&gt;</div><div class="line">                &lt;/td&gt;</div><div class="line">                &lt;td width=&quot;60%&quot; height=&quot;80%&quot; style=&quot;background-color:blue&quot;&gt;&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">            &lt;td width=&quot;100%&quot; height=&quot;10%&quot; style=&quot;background-color:red&quot; colspan=&quot;2&quot;&gt;底部&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line"></div><div class="line">         &lt;/table&gt;</div><div class="line">     &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
+          HTML列表
 
-          
+
+&lt;ol&gt;
+有序列表
+
+
+
+
+&lt;ul&gt;
+无序列表
+
+
+&lt;li&gt;
+列表项
+
+
+&lt;dl&gt;
+列表
+
+
+&lt;dt&gt;
+列表项
+
+
+&lt;dd&gt;
+描述
+
+
+
+
+无序列表使用标签:&lt;ul&gt;、&lt;li&gt;属性：
+
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/02/HTML初学笔记二/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -936,132 +821,21 @@
       
         
           
-            <h1 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h1><ul>
-<li>html 是指超文本标记语言，不是编程语言</li>
-<li><p>Html5  ：需要熟练掌握快捷键</p>
-</li>
-<li><p>HTML的新特性：</p>
-<blockquote>
-<p>用于绘画的canvas标签；<br>用于媒介回放的video和audio元素<br>对本地离线存储的更好支持<br>新的特殊元素：article、footer、header、nav、section<br>新的表单控件：calendar、date、time、email、url、searth<br>浏览器的支持：Safari、Chrome、Firefox、Opera、IE9</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="注"><a href="#注" class="headerlink" title="注"></a>注</h4><ul>
-<li>使用软件  Intellij IDEA -Static Web</li>
-<li>新建-New-HTML File(不需要写后缀名）</li>
-<li>需要学习的技能 XHTML、CSS3.JavaScript、jQuery:jQuery-UI、jQuery-Mobile</li>
-</ul>
-<hr>
-<h1 id="HTML-基础"><a href="#HTML-基础" class="headerlink" title="HTML 基础"></a>HTML 基础</h1><blockquote>
-<p>HTML5的声明：&lt;!DOCTYPE html&gt;<br>HTML基础标签：head、body<br>HTML标题：<code>&lt;h1&gt;</code>…<code>&lt;h6&gt;</code>等标签进行定义           {标题字号大小不一样}<br>HTML段落:<code>&lt;p&gt;</code>标签定义段落<br>HTML链接:<code>&lt;a&gt;</code>标签定义连接      <a href="地址"><br>HTML图像:<code>&lt;img&gt;</code>标签定义图像&lt;img src=”imges/html.png&gt;</a></p>
-</blockquote>
-<h3 id="HTML元素"><a href="#HTML元素" class="headerlink" title="HTML元素"></a>HTML元素</h3><table>
-<thead>
-<tr>
-<th>开始标签</th>
-<th>元素内容</th>
-<th>结束标签</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;p&gt;</code></td>
-<td>this is my web</td>
-<td><code>&lt;/p&gt;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a>HTML属性</h3><p>属性以键值对的形式出现，如：href=“www.jikexueyuan.com”</p>
-<ul>
-<li>常用的标签属性：</li>
-</ul>
-<blockquote>
-<p><code>&lt;h1&gt;</code>:align对齐方式<br><code>&lt;body&gt;</code>:bgcolor背景颜色<br><code>&lt;a&gt;</code>:target规定在何处打开链接</p>
-</blockquote>
-<ul>
-<li>通用属性:</li>
-</ul>
-<blockquote>
-<p>class : 规定元素的类名<br>id    ：规定元素的唯一ID<br>style : 规定元素的样式<br>title   ：规定元素的额外信息</p>
-</blockquote>
-<h3 id="HTML格式化效果"><a href="#HTML格式化效果" class="headerlink" title="HTML格式化效果:"></a>HTML格式化效果:</h3><blockquote>
-<p><code>&lt;b&gt;</code>定义粗体文字<br> <code>&lt;big&gt;</code>定义大号字<br> <code>&lt;em&gt;</code>定义着重文字<br> <code>&lt;i&gt;</code>定义斜体字<br> <code>&lt;small&gt;</code>定义小号字<br> <code>&lt;strong&gt;</code>定义加重语气<br> <code>&lt;sub&gt;</code>定义下标字<br> <code>&lt;sup&gt;</code>定义上标字<br> <code>&lt;ins&gt;</code>定义插入字<br> <code>&lt;del&gt;</code>定义删除字</p>
-</blockquote>
-<hr>
-<h3 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a>HTML样式</h3><ul>
-<li>标签:<br><code>&lt;style&gt;</code>: 样式定义<br><code>&lt;link&gt;</code>:资源引用</li>
-<li>属性:<br><code>rel=&quot;stylesheet&quot;</code>:外部样式表<br><code>type=“text/css&quot;</code>:引入文档类型<br><code>margin-left</code>:边距</li>
-</ul>
-<h3 id="三种样式表插入方法"><a href="#三种样式表插入方法" class="headerlink" title="三种样式表插入方法:"></a>三种样式表插入方法:</h3><p><strong>外部样式表</strong><br><code>&lt;link rel =&quot;stylesheet&quot; type=&quot;text/css&quot; herf= &quot;mystyle.css&quot;&gt;</code></p>
-<p><strong>内部样式表</strong></p>
-<blockquote>
-<p><code>&lt;style type= &quot;text/css&quot;&gt;</code><br>body {background-color:red}<br>p {margin-left:20px}<br><code>&lt;/style&gt;</code></p>
-</blockquote>
-<p><strong>内联样式表</strong><br><code>&lt;p style= &quot;color:red&quot;&gt;</code></p>
-<h3 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h3><h4 id="连接数据"><a href="#连接数据" class="headerlink" title="连接数据:"></a>连接数据:</h4><blockquote>
-<p>文本连接:如 <code>&lt;a href=&quot;http://www.jike.com&quot;&gt;点击&lt;/a&gt;</code><br>图片链接:如 <code>&lt;a href=&quot;http://www.jike.com&quot;&gt;</code><br><code>&lt;img src=&quot;html.png&quot;&gt;</code><br><code>&lt;/a&gt;</code><br>如果图片大小不合适，可以改变其大小: <code>&lt;img src=&quot;html.png&quot; width=&quot;200px&quot; height=&quot;200px&quot; alt=&quot;html5logo&quot;&gt;</code></p>
-</blockquote>
-<h4 id="img标签属性"><a href="#img标签属性" class="headerlink" title="img标签属性:"></a>img标签属性:</h4><p>alt:替换文本属性<br>width:宽<br>height:高</p>
-<h4 id="属性"><a href="#属性" class="headerlink" title="属性:"></a>属性:</h4><p>href属性:指向另一个文档的链接<br>name:创建文档内的链接</p>
-<blockquote>
-<p><code>&lt;a name=&quot;tips&quot;&gt;hello&lt;/a&gt;</code><br><a href="#tips">跳转到hello</a></p>
-</blockquote>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格:"></a>表格:</h4><hr>
-<table>
-<thead>
-<tr>
-<th><code>&lt;table&gt;</code></th>
-<th>定义表格</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;caption&gt;</code></td>
-<td>定义表格标题</td>
-</tr>
-<tr>
-<td><code>&lt;tr&gt;</code></td>
-<td>定义表格的行</td>
-</tr>
-<tr>
-<td><code>&lt;td&gt;</code></td>
-<td>定义表格的单元</td>
-</tr>
-<tr>
-<td><code>&lt;thead&gt;</code></td>
-<td>定义表格的页眉</td>
-</tr>
-<tr>
-<td><code>&lt;tbody&gt;</code></td>
-<td>定义表格的主体</td>
-</tr>
-<tr>
-<td><code>&lt;tfoot&gt;</code></td>
-<td>定义表格的页脚</td>
-</tr>
-<tr>
-<td><code>&lt;col&gt;</code></td>
-<td>定义表格的列属性</td>
-</tr>
-<tr>
-<td><code>&lt;th&gt;</code></td>
-<td>定义表头</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<ul>
-<li><p>定义边框<code>&lt;table border=&quot;1&quot; cellpadding=&quot;10&quot;&gt;</code>(单元格边距)</p>
-<blockquote>
-<p>cellspacing=”10” (单元格间距)<br>bgcolor=”颜色” (给表格添加颜色)<br>background=”html.png” (给表格添加背景图片)</p>
-</blockquote>
-</li>
-<li><p>定义表头也在<code>&lt;tr&gt;</code>中，</p>
-</li>
-<li>在最外层加一个<code>&lt;p&gt;</code>表格<code>&lt;/p&gt;</code> 这是加一个标题,也可以在<code>&lt;table&gt;</code>下加<code>&lt;caption&gt;</code>表格<code>&lt;/caption&gt;</code></li>
-</ul>
+          HTML简介
+html 是指超文本标记语言，不是编程语言
+Html5  ：需要熟练掌握快捷键
 
-          
+HTML的新特性：
+
+用于绘画的canvas标签；用于媒介回放的video和audio元素对本地离线存储的更好支持新的特殊元素：article、footer、header、nav、section新的表单控
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/31/HTML初学笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1179,10 +953,17 @@
       
         
           
-            <p><img src="http://ovebwlyvp.bkt.clouddn.com/1501579850.jpg" alt="GitHub set up"></p>
-<hr>
-<h3 id="阿波罗．罗宾斯和艾娃．杜，既是夫妻也是事业夥伴，他们用巧妙的手法来娱乐及教育大众。罗宾斯是手法敏捷惊人的扒手，他最为人所知的事迹，是从某些正在执行护卫总统勤务的秘勤局干员身上，扒走他们口袋里所有东西。杜是研读过心理生物学的魔术师。「我们认为骗术是意图扭曲别人对现实的知觉，」他们说：「它是一个无所偏袒的工具，有好的用途，也有坏的，可以告知，也可以误导。」"><a href="#阿波罗．罗宾斯和艾娃．杜，既是夫妻也是事业夥伴，他们用巧妙的手法来娱乐及教育大众。罗宾斯是手法敏捷惊人的扒手，他最为人所知的事迹，是从某些正在执行护卫总统勤务的秘勤局干员身上，扒走他们口袋里所有东西。杜是研读过心理生物学的魔术师。「我们认为骗术是意图扭曲别人对现实的知觉，」他们说：「它是一个无所偏袒的工具，有好的用途，也有坏的，可以告知，也可以误导。」" class="headerlink" title="阿波罗．罗宾斯和艾娃．杜，既是夫妻也是事业夥伴，他们用巧妙的手法来娱乐及教育大众。罗宾斯是手法敏捷惊人的扒手，他最为人所知的事迹，是从某些正在执行护卫总统勤务的秘勤局干员身上，扒走他们口袋里所有东西。杜是研读过心理生物学的魔术师。「我们认为骗术是意图扭曲别人对现实的知觉，」他们说：「它是一个无所偏袒的工具，有好的用途，也有坏的，可以告知，也可以误导。」"></a>阿波罗．罗宾斯和艾娃．杜，既是夫妻也是事业夥伴，他们用巧妙的手法来娱乐及教育大众。罗宾斯是手法敏捷惊人的扒手，他最为人所知的事迹，是从某些正在执行护卫总统勤务的秘勤局干员身上，扒走他们口袋里所有东西。杜是研读过心理生物学的魔术师。「我们认为骗术是意图扭曲别人对现实的知觉，」他们说：「它是一个无所偏袒的工具，有好的用途，也有坏的，可以告知，也可以误导。」</h3>
           
+
+阿波罗．罗宾斯和艾娃．杜，既是夫妻也是事业夥伴，他们用巧妙的手法来娱乐及教育大众。罗宾斯是手法敏捷惊人的扒手，他最为人所知的事迹，是从某些正在执行护卫总统勤务的秘勤局干员身上，扒走他们口袋里所有东西。杜是研读过心理生物学的魔术师。「我们认为骗术是意图扭曲别人对现实的知觉，」他们说：「它是一个无所
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/辩证法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1322,139 +1103,18 @@
       
         
           
-            <blockquote>
-<p>读《金字塔原理》</p>
-</blockquote>
-<p><strong>作者简介：</strong>芭芭拉•明托，麦肯锡公司第一位女性咨询顾问。明托是哈佛商学院录取的第二批女学员之一，毕业时被国际知名管理咨询公司——麦肯锡聘请为该公司有史以来的第一位女性咨询顾问。她在写作方面的优势很快得到麦肯锡高层的赏识，负责提高麦肯锡公司员工的写作能力，致力于探索条理清晰的文章所必需的思维结构。本书在1973年首次出版，当即引起轰动，畅销欧美市场30年不衰，书中传授的方式与技巧，被公认为即便对于最有经验的管理者来说也是十分关键的</p>
-<h2 id="表达的逻辑"><a href="#表达的逻辑" class="headerlink" title="表达的逻辑"></a>表达的逻辑</h2><h3 id="为什么要用金字塔结构"><a href="#为什么要用金字塔结构" class="headerlink" title="为什么要用金字塔结构"></a>为什么要用金字塔结构</h3><p>文章中的思想必须符合以下规则：</p>
-<ul>
-<li>纵向：文章中任一层次上的思想必须是其下一层次思想的概括</li>
-<li>横向：每组中的思想必须属于同一逻辑范畴</li>
-<li>横向：每组中的思想必须按逻辑顺序组织</li>
-</ul>
-<p>组织思想基本上只可能有4种逻辑顺序：</p>
-<ul>
-<li>演绎顺序：大前提、小前提、结论</li>
-<li>时间顺序：第一、第二、第三</li>
-<li>结构顺序：波士顿、纽约、华盛顿</li>
-<li>程度顺序：最重要、次重要、等等</li>
-</ul>
-<h3 id="金字塔内部的结构"><a href="#金字塔内部的结构" class="headerlink" title="金字塔内部的结构"></a>金字塔内部的结构</h3><p>利用金字塔中的子结构，能够加快你梳理思想的过程：</p>
-<ul>
-<li>主题与子主题之间的纵向关系</li>
-<li>各子主题之间的横向关系</li>
-<li>序言的叙述方式</li>
-<li>如何构建金字塔</li>
-</ul>
-<p>自上而下法构建金字塔的步骤：</p>
-<ul>
-<li>提出主题思想</li>
-<li>设想受众的主要疑问</li>
-<li>写序言：背景-冲突-疑问-回答</li>
-<li>与受众进行疑问/回答式对话</li>
-<li>对受众的新疑问，重复进行疑问/回答式对话</li>
-</ul>
-<p>自下而上思考：</p>
-<blockquote>
-<ul>
-<li>列出你想表达的所有思想要点</li>
-<li>找出各要点之间的逻辑关系</li>
-<li>得出结论</li>
-</ul>
-</blockquote>
-<h3 id="序言的具体写法"><a href="#序言的具体写法" class="headerlink" title="序言的具体写法"></a>序言的具体写法</h3><p>文章的序言（前言、引言、导言）概括读者已知的信息，并将这些信息与文章将要回答的疑问建立联系，然后作者就可以将全部精力放在提供回答疑问的答案上。如果是写文章，就是“序言”；如果是演讲，就是“开场白”。</p>
-<p>文章的序言必须用讲故事的形式，也就是说，序言必须先介绍读者熟悉的某些“背景”，说明发生的“冲突”，并由此引发读者的“疑问”，然后针对该“疑问”给出“答案”。这种讲故事的形式对于组织读者已知的信息非常有用。你一旦掌握了这种方法，就能够迅速构思出较短文章的结构。</p>
-<p>之所以序言要用讲故事形式，是为了让读者抛开复杂的思想，专注于你的话题。激发读者兴趣，吸引注意力：新奇、悬念、与读者本人相关。</p>
-<p>序言应当介绍4要素：</p>
-<ul>
-<li>介绍背景</li>
-<li>指出冲突</li>
-<li>引发疑问</li>
-<li>给出答案</li>
-</ul>
-<h3 id="演绎推理与归纳推理"><a href="#演绎推理与归纳推理" class="headerlink" title="演绎推理与归纳推理"></a>演绎推理与归纳推理</h3><p>演绎是一种线性的推理方式，最终是为了得出一个由逻辑词“因此”引出的结论。归纳推理是将一组具有共同点的事实、思想或观点归类分组，并概括其共同性或论点。在演绎过程中，每个思想均由前一个思想导出；而在归纳过程中则不存在这种关系。</p>
-<p>演绎推理非常繁琐，主要是因为演绎推理必须从简单明了的思想推导出复杂的思想，所以在写作过程中不要过多的使用演绎推理。而归纳与此相反，归纳法先说明如何做到，然后再详细阐述为什么，在实际情况中，归纳法往往效果更好，这是因为先说明行动，后说明原因，而读者往往最关心的就是那些行动。</p>
-<p>如果把文章想象成金字塔的多层级结构，那么在较低的层次上使用演绎推理是可以的，但是在较高的层次上，归纳法总是比演绎法更容易理解，为什么这样讲？如果读者必须读完十几页，才能找到演绎推理的第一步和第二步之间的关系，又必须再读十几页才能找到第二步和第三步之间的关系，那么读者就无法快速理解这次演绎推理。</p>
-<p>如果准备在金字塔结构的较低层次上使用演绎推理，需要注意如下两点</p>
-<ul>
-<li>演绎推理的过程不要超过4个步骤</li>
-<li>推导出的结论不要超过两个</li>
-</ul>
-<p>演绎推理需要完成3个步骤</p>
-<ul>
-<li>阐述世界上已存在的某种情况</li>
-<li>阐述世界上同时存在的相关情况。如果第二个表述是针对第一个表述的主语或谓语的，则说明这两个表述相关</li>
-<li>说明这两种情况同时存在时隐含的意义</li>
-</ul>
-<p>演绎推理与归纳推理的区别</p>
-<blockquote>
-<ul>
-<li>演绎推理，第二点是对第一点主语或谓语的论述</li>
-<li>归纳推理，同组中的思想具有类似的主语或谓语</li>
-</ul>
-</blockquote>
-<h3 id="思考的逻辑"><a href="#思考的逻辑" class="headerlink" title="思考的逻辑"></a>思考的逻辑</h3><p>应用逻辑顺序</p>
-<p>所有列入同一组中的思想必须具有某种逻辑顺序，这条规则可以保证你列入同一组中的思想确实属于这一组，还可以防止你遗漏任何相关的思想。常用的顺序主要有三种：时间顺序、结构顺序、程度顺序。</p>
-<p>概括各组思想</p>
-<p>思想的表达方式可以是行动性语句，即告诉读者做什么事；也可以是描述性语句，即告诉读者关于某些事的情况。</p>
-<ul>
-<li>概括行动性思想（介绍采取的行动、行为、步骤、流程）时，应说明采取行动后取得的“结果”（效果、达到的目标）</li>
-<li>概括描述性思想（介绍背景、信息）时，应说明这些思想具有的“共同点的含义”（共同点的意义）</li>
-</ul>
-<h3 id="解决问题的逻辑"><a href="#解决问题的逻辑" class="headerlink" title="解决问题的逻辑"></a>解决问题的逻辑</h3><h4 id="界定问题"><a href="#界定问题" class="headerlink" title="界定问题"></a>界定问题</h4><p>判断问题是否存在，通常要看经过努力得到的结果与希望得到的结果之间是否有差距。由某一特定背景导致的某一特定结果，称为非预期结果（R1，Undesired Result）。“问题”是指你不喜欢某一结果，想得到其他结果，称为期望结果（R2，Desired Result）。解决方案则是指如何从现状R1到目标R2。</p>
-<h4 id="结构化分析问题"><a href="#结构化分析问题" class="headerlink" title="结构化分析问题"></a>结构化分析问题</h4><p>分析问题的标准流程是：收集信息-&gt;描述发现-&gt;得出结论-&gt;提出方案。经过一系列有意识、有条理地去收集事实，得出符合逻辑的发现。但是多数人都是收集该领域一切可以收集到的资料，等所有事实和资料齐备时才正式开始分析。这种做法可行，但是需要付出额外的辛苦，比较好的方法是建立诊断框架和逻辑树指导，来分析和引导思维，不仅能提高解决问题的效率，而且简化了把结果构建成金字塔的工作。</p>
-<p>结构化分析问题的方法主要是</p>
-<ul>
-<li>从信息资料入手</li>
-<li>设计诊断框架</li>
-<li>使用诊断框架</li>
-<li>建立逻辑树</li>
-<li>是非问题分析</li>
-</ul>
-<h3 id="演示的逻辑"><a href="#演示的逻辑" class="headerlink" title="演示的逻辑"></a>演示的逻辑</h3><p>在纸面上或屏幕上展示你的思想时，无论采用何种形式，在视觉上，你都需要确保能加强组成金字塔的思想之间的逻辑性和它们之间的相互关系。读者或观众总是先看到逻辑关系的存在，然后才能理解它。因此你要用读者眼睛所看到的来强化她们的头脑所接收的。</p>
-<h4 id="在书面上呈现金字塔"><a href="#在书面上呈现金字塔" class="headerlink" title="在书面上呈现金字塔"></a>在书面上呈现金字塔</h4><p>一般来说，文章较短，读者很容易明白文中的要点及其相互之间的关系。而对于长文，要突出显示文章的框架结构，在页面上呈现出金字塔层级，常见的方法很多，如下所示：</p>
-<ul>
-<li>多级标题法</li>
-<li>下划线法</li>
-<li>数字编号法</li>
-<li>行首缩进法</li>
-<li>项目符号法</li>
-</ul>
-<p>另一个注意点是文章的上下文之间要有过渡，在写完序言后，进入文章正文，需要一段简短的文字，在每组主要思想观点开始或结束的地方稍作铺垫，让读者知道已经论述的和下一步计划论述的内容，同时保证论点和论点之间的连接流畅且不机械。</p>
-<h4 id="在PPT演示文稿中呈现金字塔"><a href="#在PPT演示文稿中呈现金字塔" class="headerlink" title="在PPT演示文稿中呈现金字塔"></a>在PPT演示文稿中呈现金字塔</h4><p>设计PPT演示文稿的最基本原则</p>
-<blockquote>
-<ul>
-<li>文字幻灯片应只包含最重要的、经过适当分组和总结的思想，叙述时应尽量简洁</li>
-<li>演示文稿应图文并茂，使用各种图表相配合</li>
-<li>演示文稿应呈现经过深思熟虑后的故事梗概和剧本</li>
-<li>演示文稿中，理想的图表比例占90%，文字占10%</li>
-</ul>
-</blockquote>
-<p>制作现场演示用的文字幻灯片时，需要强调的是，只有你，演示者，才是表演的明星。房间里所有听众最感兴趣的不是幻灯片，而是你。幻灯片只不过是视觉上的辅助手段，其作用主要是让演示更加生动。</p>
-<p>决定一张幻灯片的内容，应牢记以下指导性原则</p>
-<ul>
-<li>每次只演示和说明一个论点</li>
-<li>论点应使用完整的陈述句，而不是标题性语言</li>
-<li><strong>文字应尽量简短</strong></li>
-<li>使用简单的词汇和数字</li>
-<li>字号应足够大</li>
-<li>注意幻灯片的趣味性</li>
-<li>用逐级展开呈现，提高趣味性</li>
-</ul>
-<h3 id="在字里行间呈现金字塔"><a href="#在字里行间呈现金字塔" class="headerlink" title="在字里行间呈现金字塔"></a>在字里行间呈现金字塔</h3><p>在理解每个字词的时候，你的头脑中应该逐步描绘出一幅思想图画。当你理解一个又一个的短语和句子时，图画的细节变得更加丰富。你所描绘的图像不是摄影意义上的图像，而是作者所说的“记忆图像”，随着文章的进展而逐渐清晰起来。有关记忆的研究已经证明图像能帮助增加记忆，但同时也表明，忘记和添加哪些细节取决于人们的感情偏好。尽管如此，记忆图像确实能在阅读过程中，帮助你逐字逐句记忆段落和从中提取信息。</p>
-<p>以图像形式存储知识非常重要，因为阅读是一个逐字逐句进行的过程，而且我们的头脑只能容纳有限的词汇。通过从文字恢复图像的方法，读者不仅能大量传递知识，使头脑更加有效地处理，而且能用清晰的图像传递信息，便于回忆。</p>
-<p>引用威廉·明托教授的一段话来阐释作者与读者或者说听众的关系</p>
-<blockquote>
-<p>写作时，你好像一位司令官，指挥着千军万马，排队通过一个每次只能通过一个人的狭隘关口；而你的读者则在另一边迎接，将部队进行重新编排和组织。无论主题多么大或者多么复杂，你只能以这种方式表达。</p>
-<p>最终你会发现，这就是我们在顺序和编排上对读者应尽的义务，以及为什么修辞学者们除了强调修辞得体和别出心裁外，还把顺序和编排当作对那些给予自己厚爱的人的应尽职责。</p>
-</blockquote>
-<p><img src="http://ovebwlyvp.bkt.clouddn.com/1502875761.jpg" alt="GitHub set up"></p>
-<hr>
-<blockquote>
-<p><img src="http://ovebwlyvp.bkt.clouddn.com/1502876540.jpg" alt="GitHub set up"></p>
-</blockquote>
-
           
+读《金字塔原理》
+
+作者简介：芭芭拉•明托，麦肯锡公司第一位女性咨询顾问。明托是哈佛商学院录取的第二批女学员之一，毕业时被国际知名管理咨询公司——麦肯锡聘请为该公司有史以来的第一位女性咨询顾问。她在写作方面的优势很快得到麦肯锡高层的赏识，负责提高麦肯锡公司员工的写作能力，致力于探索条理清晰的文章所
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/综合性文章图片测试6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1594,17 +1254,15 @@
       
         
           
-            <h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>一不小心，追了一个剧<strong>《人民的名义》</strong>，随着剧情一点一点地推进，突然开始很心疼，心疼的不是别人，也不是剧中的人物，因为那毕竟是虚构的，不是真实的人生，而是我们自己，这才是真真实实的生活与生命。看了剧中的情节，真是大开眼界，不论是祁同伟的一人得道，鸡犬升天，还是赵瑞龙的草菅人命亦或是丁义珍在饭局上左右逢源，逢场作戏，近似人生赢家。甚至一个处级干部赵德汉，都能狂贪几个亿，要知道，除了国家级领导人，下面就是部司厅局处科，小小一个处级干部，都能贪污几个亿？你知道天朝有多少处级干部吗？呵呵，我还真查了下，毛爷爷说，没有调查就没有发言权，参考链接在这里，处级干部约60万，一个人一亿的话，不敢想象，当然了，不能这么悲观，要相信党相信政府，我还是有这觉悟的。现如今大家都说日子难过，现在知道了吧？为什么我们日子难过了，在人民的名义中各种现象也只是社会真实情况的冰山一角吧？假设现实情况比电视剧中所要努力描绘的良好社会略槽糕一点点，那么日子难就很正常了，我想说，不正常才奇怪哩。</p>
-<p>现在好多人都说房价高，那么房价为什么会高呢？只有两种情况，一种是你赚钱的速度赶不上房价的上涨速度，另一种是货币贬值了，房价虚高，只不过刚需接盘侠们是货币贬值的最后承受者，没有享受到任何一点点货币贬值带来的收益，要知道货币贬值对所有人来说并不是公平的，有人说，我手里的钱贬值了，那有钱人手里的钱一样也贬值了呀？只能说你too young，too simple，钱就像是流水，就像一条河，同样的一河水，在水的上游和下游能一样吗？同样货币这个贬值链，就像一条河水一样，也分上游下游，货币流到上游的人的手里的时候，并没有贬值，而是和以前价值一样，那么这些占据上游的都是哪些人呢？发大水的是央行，上游的人是各大国有银行、国企、国家各部委、权力掌控者等，中游是商业银行、民营企业、利益既得者等，经过层层盘剥，当这个贬值链流到下游的时候，又是哪些人呢？就是这个底层劳动人民、刚需接盘侠，之所以房价会高涨，是因为没有任何一个产业能够锁住这么海量的贬值货币，唯有将这些海量的货币存之于楼市，才能尽量减少对其他行业的伤害，试想通胀不是流向楼市，而是流向日常生活必须品，那个个吃不上饭可是天大的问题了，但是一部分人住不上房却不是致命的，即使这些住不上房的人闹腾也不用操心，因为那些有房的会代政府来管教他们，你说此话怎讲，君不见，房价略降，全国各地的售楼处都出现了业主打砸情况吗？这不就是有房产者、既得利益者在代国家管教这些无房产者吗？房价想降很难，一是政府不愿意，房价降了，海量的贬值货币往哪藏呢？二是有产者不愿意，买不起房，大家不会联合起来打砸售楼处，但是房价下降，已买房的人则会联合起来上书政府，要求政府救市，更有甚者，直接联合起来打砸售楼处，还有天理吗？法制社会存在这种流氓行径？没有任何理由，就是因为房价下降，就可以任意耍流氓了？呵呵，这些人没有得到严肃的处理，已经代表了政府的态度，睁一只眼闭一只眼，这些人就都没事了。</p>
-<p>追剧的过程中，一把手在剧中出现了无数遍，我英文不好，不要欺负我，我想请问一把手英文怎么翻译呢？大英帝国、美帝国家人民的词典中，有一把手这个词吗？有海外待过的人，还望不吝赐教。民选政府与任命制有着本质的区别，民选出来的领导人要对人民负责，同理，任命制选出来的领导人只对任命他的人负责。这种本质的区别，注定了人民有着本质的不同地位，该得到什么样的对待都是自己争取而来，你笑着看资本主义国家人民游行、示威、罢工，那就不要忽视人家赢得的地位。有付出才有收获，老祖宗留下来的话，是有道理的。任命制在我看来只能听天由命了，就像古代皇帝一样，如果是个雄才大略、英明神武的皇帝，那么人民生活相对来说更幸福一点，如果碰到昏庸无能、荒淫无度的主，那人民的生活能不水深火热吗？这不就是靠天吃饭吗？和现在的任命制有啥区别？一把手喜欢你，就提拔你，至于你对人民来说是福是祸，又有几个一把手会关心呢？</p>
-<p>这部剧叫《人民的名义》，恕我愚钝，我不知道这里面哪一点代表了人民的名义，我只看到草根出身的处长在第一集就被干掉了，我只看到同样草根出身的祁同伟和高小琴最后同样被干掉了，而那个利用权势不断打压祁同伟的人呢？梁璐包括他的父亲最后毫发无损，这就是人民的名义吗？人民的孩子总是最先和最后被干掉吗？我分明看到的就是有权有势同样能逍遥法外，我不知道现实中有多少丁义珍，但是我敢保证现实中的丁义珍绝对不会在国外的餐馆刷盘子，处处美化、处处讨喜，编剧们都不觉得恶心吗？像沙瑞金和侯亮平在现实中毕竟是少数，再进一步讲，现实中有多少丁义珍、赵立春（副国级，国家领导人啊、领导人啊、领导人啊）、赵瑞龙、刘新建、陈清泉等等这些人呢？恐怕远不止电视中所表现的那些吧？</p>
-<p>在剧情最后部分，侯亮平劝降祁同伟，莫名的心疼起祁同伟来，那个和天下棋，愿用自己的命去胜天半子的人，也许在祁的心中是这么想的，你侯亮平算什么东西，也敢来劝降我？在祁的身边，虽然不乏师长，以及同一师门的师弟师妹，但是又有几个打心眼里瞧得起看得起他的呢？他想过靠自己的努力来出人头地，在大学里学习努力，成绩优异，并且还是校学生会主席，但是有什么用呢？毫无关系背景的他，眼睁睁的看着那些能力平平甚至低于他的的校友们分配到了大城市，而他却被掌控权力的梁璐的父亲下放到了穷山沟沟里，只因他没接受梁璐的追求，即便他没有放弃，主动请缨去做缉毒工作，因为这个工作更危险，更容易立功，凭借着过人的勇气和努力，他成为了缉毒英雄，但是结果呢？梁璐的父亲，凭借手握大权，借着权力以惜才为名义，阻止让他升迁，硬生生的将他继续困于穷山沟之中。最终，这个内心孤傲的人向现实屈服了，这才有了那在汉东大学的著名一跪，祁同伟啊是个被时代抛弃的人、是个被权力毁掉的人、是个草根出身不断向上爬却死在权力脚下的人，直到最后事发败露，他也没有屈服，用他的话说，这个世界上没有人能够审判他，即便可能被判无期徒刑，苟延残喘，但是并没有，他没有投降，没有屈服，而是选择自杀结束生命。</p>
-<p>剧中还有一个现象被大家忽略了，那就是高育良和李达康的女儿都出国了，这就是官二代的命啊。而侯亮平和陈海这种所谓的中产呢？孩子只能挤在国内上些垃圾学校，甚至侯亮平妻子给孩子报的一个补习班，那老师居然是个电工，但是招生工作火热火热的，这和现代的学区房、各种补习班真是不谋而合。幸好这个老师被侯亮平一眼识破，谁又能说现实中存在诸多没有被识破的呢？如果现实中没有侯亮平去戳穿老师的嘴脸呢？岂不是依然可以大摇大摆的顶着补习班的名义继续招摇撞骗。如果现实中的所有官员子女都在国外接受教育，他们对人民又怎么会负责呢？从小接受资本主义国家的理念、文化、习俗、教育等等，怎么比得了土生土长的中国人对人民的了解程度呢？这些人谁又能保证其不在官爸爸富爸爸的扶持下走上统治人民的路子呢？当他们成长为了统治阶级，只要自我舒适，谁管你人民死活，大不了贪了几个亿全家移民罢了。</p>
-<blockquote>
-<p>生活<br>人性</p>
-</blockquote>
-
-          
+          测试一不小心，追了一个剧《人民的名义》，随着剧情一点一点地推进，突然开始很心疼，心疼的不是别人，也不是剧中的人物，因为那毕竟是虚构的，不是真实的人生，而是我们自己，这才是真真实实的生活与生命。看了剧中的情节，真是大开眼界，不论是祁同伟的一人得道，鸡犬升天，还是赵瑞龙的草菅人命亦或是丁义珍在饭局上左右
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/综合性文章图片测试三/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1920,29 +1578,25 @@ b.im/asset/img/set-up-git.gif" alt="GitHub set up"> 格式: <img src="url" alt="
       
         
           
-            <h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><ol>
-<li>列表1</li>
-<li>列表2</li>
-<li>列表3</li>
-</ol>
-<p>//插入代码<br>public void main(String[] args){<br>    System.out.println(“Hello World!”);<br>}</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><del>删除线</del></p>
-<ul>
-<li>112112</li>
-<li>66566</li>
-<li>665656</li>
-<li>56565</li>
-</ul>
-<blockquote>
-<p>引用，只能写在一行</p>
-</blockquote>
-<ul>
-<li style="list-style: none"><input type="checkbox"> 未勾选</li>
-<li style="list-style: none"><input type="checkbox" checked> 勾选的</li>
-</ul>
-<p><a href="http://www.714.hk" target="_blank" rel="external">云+：来自科研与信息化部</a><br><img src="http://ou5mbmsrx.bkt.clouddn.com/TIM%E5%9B%BE%E7%89%8720170829101137.jpg" alt="image"></p>
+          markdown语法分割线
+列表1
+列表2
+列表3
 
-          
+//插入代码public void main(String[] args){    System.out.println(“Hello World!”);}
+一级标题二级标题三级标题四级标题五级标题六级标题删除线
+
+112112
+66566
+66
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/常用语法测试一/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2082,175 +1736,16 @@ b.im/asset/img/set-up-git.gif" alt="GitHub set up"> 格式: <img src="url" alt="
       
         
           
-            <h1 id="笔记——《海伯利安的陨落-The-Fall-of-Hyperion》（大量剧透）"><a href="#笔记——《海伯利安的陨落-The-Fall-of-Hyperion》（大量剧透）" class="headerlink" title="笔记——《海伯利安的陨落-The-Fall-of-Hyperion》（大量剧透）"></a>笔记——《海伯利安的陨落-The-Fall-of-Hyperion》（大量剧透）</h1><blockquote>
-<p>鉴于书中人物关系、政治关系、地点繁多等足以混乱对故事理解的因素，作此笔记以梳理。在梳理的过程中从对海伯利安初读的朦胧转变为对故事错综性的惊叹，六位主角经历中的细节安排，全局呼应的布置，无一不让这部小说呈现出如此精彩丰富的世界。</p>
-</blockquote>
-<h2 id="关键词一览："><a href="#关键词一览：" class="headerlink" title="关键词一览："></a>关键词一览：</h2><ul>
-<li>霸主：人类主要统一政权，覆盖近四百个星球。</li>
-<li>技术内核：人工智能独立后在数据层面的存在组织。尝试各种可能通过计算来掌控所有可能性，但仅限于掌控发展规律，很少参与政治。</li>
-<li>稳定派：技术内核最古老的派系，技术内核最古老的派系，可以上溯到地球时期，希望与人类共处并避免任何不可预测的草率决定。</li>
-<li>反复派：三百年前出现，认为人类无用，鼓吹人类灭绝。</li>
-<li>终极派：以预测所有可能性为目的，不在乎人类是否存在，只在乎人类是否有用，因此更趋向于稳定派，但后来发现光阴冢可能是未来内核的造物用来毁灭人类，也可能是是未来人类的创造用来抵抗反复派从而对内核不利，因此转向了反复派。</li>
-<li>赛伯人：人工智能创造的通过大数据来重建某一特定人类对象的人格机器人，人工智能通过其研究人类是否有可能对创造光阴冢负有责任。<blockquote>
-<p>驱逐者：在霸主帝国边缘活动的非帝国人类，因为缺乏重力等技术而产生进化，被帝国人类看作掠夺者。实际为霸主和技术内核蓄意清除的对象。在研究环网传送门时理解了操控时空的原理，能够停止光阴冢的逆墒场，释放伯劳。后在海伯利安战争中意图利用这一技术打败霸主，再控制伯劳，却被双面间谍领事打乱了计划。<br>环网：人工智能网络，覆盖霸主疆域中的一百七十六个星球。</p>
-<ol>
-<li>远距离传送门：技术内核提供人类的环网功能之一，人类迄今不理解其作用原理。</li>
-<li>历战网：技术内核提供人类的环网功能之二，由环网创造的模拟历史军事战斗的模拟现实，用来培训士兵。</li>
-</ol>
-</blockquote>
-</li>
-</ul>
-<hr>
-<ul>
-<li>迷宫：七十五万年前在九个类地行星上被创造出的地下隧道，位置深达 1~3 万米，皆为边长三十米的正方形，至今未解。</li>
-<li>时间债：超速旅行中因为相对论效应而造成的时间减慢效应所带来的旅行者时间与其他时间的差值。</li>
-<li>十字形：伯劳造物，类似生长性神经纤维体，通过纤维融入人体，通过巨大的痛苦将人类活动地点限制在光阴冢周围，同时惧怕痛苦，在范围内则会消除身体痛苦，如果身体受损过于严重则会重塑身体，使人永生。</li>
-<li>天大之误：造成地球毁灭的黑洞事故，为地球时期的霸主政权蓄谋者和技术内核蓄谋的事故，以此进行被称为“大流亡”的星际殖民。</li>
-<li>鲸逖：霸主政权首都。</li>
-<li><p>海伯利安：环网外的遥远行星，神使伯劳与其活动地光阴冢之所在。九迷宫之一。距离地球六百光年。</p>
-<blockquote>
-<p>大马（克莱顿 ）：海伯利安西北部大陆，三大陆之一。<br>大熊（阿伦森）：海伯利安东北部大陆，三大陆之一。<br>中央海：三大陆之间的内海。</p>
-<ol>
-<li>猫礁：主要岛礁。<ul>
-<li>费力克斯：猫礁岛上的城市。</li>
-</ul>
-</li>
-<li>九尾：小型岛群。<ul>
-<li>天鹰（洛佩兹）：海伯利安南部大陆，政治中心，大量种植区，三大陆之一。（以下地区排列由北至南 ）</li>
-</ul>
-</li>
-</ol>
-</blockquote>
-<pre><code> 1. 托柴海湾：西北部海湾。
- 2. 浪漫港：托柴海湾港口，与大马大陆隔海相望。
- 3. 湛江：内陆江，经浪漫港和托柴海湾流向中央海。
- 4. 佩瑞希伯种植园：种植园之一，杜雷神父休憩地。
- 5. 羽翼高原：遍布火焰林的高原地区，前往光阴冢的陆路必经之地。
-             火焰林：长有定期爆裂电火花的特斯拉树，是一道天然屏障。
- 6. 大裂痕：海伯利安亿万年的冰河期和三千七百年冰河周期造成的地质峡谷。光阴冢所在地。
- 7. 死寂之城：光阴冢所在地。
-             光阴冢：主要旅游景观和教会朝圣地，周围具有逆熵场，能够逆转时间。二十五年前光阴冢被打开，伯劳开始活动。因为过于危险，光阴冢的朝圣旅游活动被关闭。
- 8. 笼头山脉：光阴冢南部最后的屏障。
-             时间要塞。位于笼头山脉北部，朝圣路途中最后一处休憩所。
- 9. 草之海：济慈南方天然草场
-10. 诗人之城：一百年前哀王比利建造，已成废墟。
-11. 霍利河：济慈通往草之海的原有偏僻河道。
-12. 皇家运河：南北纵伸的主要水道。
-13. 杜霍波尔林：济慈北部森林。
-14. 西塞罗酒吧：据传以地球的芝加哥命名，领事最常去的酒吧。
-15. 济慈：海伯利安首都，唯一的空港。
-</code></pre></li>
-</ul>
-<hr>
-<ul>
-<li>阿马加斯特：沙漠监狱星球，九迷宫之一，杜雷神父考古地之一。</li>
-<li>茂伊约：地球最后的动物——海豚——灭绝之地，分裂主义的原住民被霸主政权吞噬。领事的家乡。</li>
-<li>卢瑟斯： 1.3 倍重力。伯劳教会的核心星球。</li>
-<li>旋转星：拥有低智商的原住民泽普棱，因为光感知皮肤、血肉、骨头粉皆能被霸主世界利用而被捕杀灭绝。</li>
-<li>嘉登：霸主进行生态建筑开发的所在地。原住民湿地马人被赶往风干之地而灭绝。</li>
-<li>希伯伦：犹太移民星球，大部分区域是沙漠，但剩余的部分是富饶的土地。后原住民赛内赛·阿鲁伊特人被领事灭绝。学者温特伯在女儿逆时而行之后的避居之地。<blockquote>
-<p>新耶路撒冷：首都。</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>库姆·利雅得：什叶派与逊尼派的家园。</li>
-<li>布雷西亚：军国主义自治星球，出口钻石、粗根、咖啡，拥有强大的经济与军事力量。因为处于霸主疆域边缘而屡受驱逐者的威胁，在布雷西亚战役期间被驱逐者攻破，由卡萨德上校夺回。<blockquote>
-<p>白金敏寺：首都。</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>帕瓦蒂：霸主通往海伯利安路途中的换乘中转星球。</li>
-<li>末睇：帕瓦蒂殖民星球之一，拥有待开发的重金属矿物。<blockquote>
-<p>楠达德维：末睇上的殖民小镇，人口 300。</p>
-</blockquote>
-</li>
-<li>青海-西双版纳：东方人移民行星。</li>
-<li>五仙座星团：<blockquote>
-<p>某行星：旧地模拟地。</p>
-</blockquote>
-</li>
-<li>卡斯卓-劳塞尔：没有数据网与卫星的星球，被梅伊娜·悦石用来进行重要交谈等保密事件。</li>
-<li>旧地：地球。</li>
-<li>火星：<blockquote>
-<p>塔尔锡斯：卡萨德的家乡。<br>水手峡谷：火星赤道四千公里长的峡谷，由「水手九号」卫星发现。</p>
-</blockquote>
-</li>
-<li><p>谷神星：人类发现的第一颗小行星，位于火星和土星之间。</p>
-</li>
-<li><p>伯劳教会：霸主政权内最大的教会，拥有巨树之舰，政治影响力巨大。</p>
-</li>
-</ul>
-<h2 id="人物相关一览："><a href="#人物相关一览：" class="headerlink" title="人物相关一览："></a>人物相关一览：</h2><ul>
-<li><strong>伯劳：主角。</strong>疑似未来人类造物，随光阴冢逆时间旅行，在光阴冢被打开时（逆墒场消除时）会得到释放，从而参与过去的战争而决定未来的走向。能够以光速行动。被伯劳教会尊为上帝或神使。</li>
-<li>神父雷纳·霍伊特：主角。护送杜雷神父到达海伯利安，在杜雷神父被十字形杀死之后前往海伯利安调查，找到了在特斯拉树旁永生却备受折磨的杜雷神父，感染了十字形。最后利用十字形惧怕痛苦的特点将自己钉在特斯拉树上，经过七年间不断的被特斯拉树电死——被十字形复活的过程，将十字形从身体上剥离，命享真死。</li>
-<li>保罗·杜雷：伯劳教会神父，伯劳教会主要人物，在阿马加斯特考古时伪造了上帝存在的证据，被放逐到海伯利安。<blockquote>
-<p>森法：佩瑞希伯种植园女工，在杜雷生病期间照顾他。来自浪漫港。</p>
-<ul>
-<li>米克尔：森法的丈夫，死于种植园收割事故。后来在随同霍伊特寻找杜雷时被毕库拉杀死。</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<ul>
-<li>奥兰迪：佩瑞希伯种植园行政官。</li>
-<li>塔克：带领杜雷穿过火焰林的向导。被毕库拉杀死。</li>
-<li>三廿又十：毕库拉的自称。疑为三百年前坠毁在海伯利安的远征殖民者的后裔，已经退化，伯劳追随者。更有可能是那些殖民者本人，因为十字形而永生，在一次次。</li>
-</ul>
-</blockquote>
-<pre><code>阿尔法：杜雷命名的毕库拉之一，在火焰林中第一个靠近杜雷。
-贝蒂：杜雷命名的毕库拉之二，疑为女性。
-德尔：杜雷命名的毕库拉之三。
-娥琵：杜雷命名的毕库拉之四，疑为女性，个子最矮。
-威尔：杜雷命名的毕库拉之五，断了一根手指。
-泽德：杜雷命名的毕库拉之五，手掌有疤痕，个子很高。
-</code></pre><ul>
-<li>上校费德曼·卡萨德：主角。生涯如下：</li>
-</ul>
-<blockquote>
-<p>奥林帕斯指挥学校：在历战网的各个模拟战役中遇到神秘女人与他缠绵。<br>约翰·卡特军旅团卫戍队：列兵。参与平息格列侬高克隆孙子的叛乱，后军旅团解散。<br>申请加入陆军被拒，在卢瑟斯借酒浇愁。在大醉中被偷军用通信志，寰宇卡和传送许可作废，被迫在卢瑟斯工作，体质大大增强。<br>第二十三后勤团：下士。参与霸主兼并茂伊约的岛屿战争。得到议员奖和两枚紫心勋章。<br>军部指挥学校。<br>兰伯特星环：中尉。与自由矿工不宣而战时期，带领霸主居民、领事、步兵、舰队警卫队穿过小行星钻孔轴逃离。<br>库姆·利雅得：上尉。通过小型卫星自爆汇聚 x 光消灭新先知及其追随者。<br>布雷西亚：上校。被迫抛弃新武士道精神，经过 97 天打败驱逐者，获得“南布雷西亚屠夫”的绰号。霸主将其送到医护神星舰上治疗，被驱逐者误认为军事舰打击，逃到海伯利安。<br>海伯利安：在诗人之城与神秘女人再次相遇，她叫莫尼塔，是伯劳的手下。卡萨德跟着莫尼塔和伯劳共同屠杀来到光阴冢的驱逐者。在莫尼塔展现钢铁荆棘真身的时候逃回环网。<br>前往海伯利安报仇。</p>
-</blockquote>
-<ul>
-<li>诗人马丁·塞利纳斯：主角。生涯如下：</li>
-</ul>
-<blockquote>
-<p>两百多年前出生于地球的某座富庶庄园。文学能力和天赋很高。<br>四岁时发现母亲是机器人。<br>母亲在织女星系留给他一个二十五万马克的星环银行存款。他用了一百二十九年旅行到织女星系的天国之门 ，同时背负了一百六十七年的时间债，三百多年的本息并没有让他还清母亲的负债，因为地球的账户资金被环网挪用。在长期冰冻睡眠时损伤了大脑，失去了词语能力。<br>在天国之门恢复期，被贫民窟的相识昂克打伤，被路过的空气质量局经理的老婆海伦娜救下医治。海伦娜将他的手稿交给了妹妹菲莉亚，菲莉亚爱人的朋友泰伦娜 ·绿翼-翡是最大媒体超线出版社的编辑。塞纳利斯拿到合约，出版《濒死的地球》，卖出十亿册，成为百万富翁。<br>与海伦娜结婚。创建禅灵教。与海伦娜离婚，退出禅灵教。<br>创作最完美的《诗篇》，文学性太强不符合市场口味，七千万印刷只卖出两万三千六百三十八份。被迫创作符合市场口味的《濒死的地球》卷二到卷十，退出合作关系。<br>前往吝啬星的阿斯奎斯，投奔对艺术和文学最有激情的哀王比利。<br>格列侬高叛乱，与哀王比利被迫移民海伯利安，建立诗人之城，创作《海伯利安诗篇》。<br>伯劳开始屠杀诗人之城的居民，哀王比利移居济慈，塞利纳斯继续在诗人之城创作。哀王比利后回到诗人之城意欲烧毁其手稿，伯劳出现，诗人用火反击的时候伯劳逃走，失去伯劳杀戮的诗人不再有灵感，无法继续创作《海伯利安的诗篇》。<br>计划回到海伯利安来见证杀戮，然后完成诗篇。</p>
-</blockquote>
-<ul>
-<li>学者索尔·温特伯：主角。巴纳之域南新泽星克罗佛县居民，博士，在奈藤黑塞尔学院教授历史和古典文学。与妻子共同梦见伯劳让他们献祭女儿的梦境。与妻子被迫接受鲍尔森治疗延长了寿命，为了躲避追随女儿的媒体移居希伯伦星。前往海伯利安寻找伯劳终止人与神之间的献祭关系。</li>
-</ul>
-<blockquote>
-<p>萨莱：妻子。生于巴萨德县与克罗佛县之间的一个农场，音乐理论博士。<br>瑞秋：女儿。研究外星及大流亡前的文明遗迹，在海伯利安考古时被伯劳触摸，自身时间逆转，从女人一天天退变为婴儿，并在每一天都失去了前一天的记忆，因为她活向了过去。<br>美利欧·阿郎德淄：瑞秋的男朋友，考古博士。与瑞秋一同前往海伯利安，见证了瑞秋从女朋友到忘记他到婴孩的全过程。</p>
-</blockquote>
-<ul>
-<li><p>船长海特·马斯蒂恩：主角。伯劳教会舰船「巨树伊格德拉希尔」的船长，又称巨树之音，有可能在末睇参与了对乔尼的谋杀，朝圣途中在草之海消失，又在光阴冢前出现，有可能被伯劳教会派来杀掉其他六人。</p>
-</li>
-<li><p>布劳恩·拉米亚：主角。卢瑟斯星私人侦探。</p>
-</li>
-</ul>
-<blockquote>
-<p>乔尼：拉米亚的客户，赛伯人。拥有济慈的人格，内核认为济慈创作《海伯利安》实际上是与海伯利安星球的一种超远距思想联结，与伯劳教会接触后自愿参与伯劳朝圣，认为朝圣后其智能数据部分会消失，从而完全成为济慈本人。乔尼认为济慈的出生、死亡和以赛伯体的形式复生都属于某个漫长的计划，也因此被反复派使用Ⅱ型艾滋病毒谋杀其在数据网层面的自我而失去一小时的记忆，失去的记忆中包括海伯利安。随后被伯劳教会及伯劳教会指派的帕瓦蒂兄弟追杀。在卢瑟斯尝试使用伯劳教会前往光阴冢的传送门时被杀。<br>欧内斯特·萨布林芝（屁屁）：第二十代人工智能黑客。身高两米，体重 50 公斤，因屁股瘦小被前女友——拉米亚的朋友谢娅·托尤——起了“屁屁”的绰号。协助乔尼和拉米亚进入内核盗取关于海伯利安的数据。<br>梅伊娜·悦石：霸主政权总执行官，与拉米亚的父亲共同致力于将海伯利安纳入霸主版图。拉米亚的父亲疑似被技术内核谋杀，盖因光阴冢对技术内核而言是创造终极智能前的唯一阻碍，不希望海伯利安被纳入霸主。悦石策划了雷西亚战役以探清驱逐者的实力，并以驱逐者进犯海伯利安为由对驱逐者开战，以此逼迫内核在驱逐者去的海伯利安控制权的威胁下同意将海伯利安纳入霸主。<br>耶夫申斯基：技术内核首席执行官，批准哀王比利到海伯利安殖民性开拓。</p>
-</blockquote>
-<ul>
-<li><strong>领事：主角。</strong>霸主政权领事，生于茂伊约。因茂伊约被霸主兼并而立誓复仇，利用多年打入霸主高层，并作为双面间谍策划了海伯利安战争，在朝圣中向驱逐者报告朝圣进程。但这些很可能早已被技术内核预测到并加以利用。生涯与人物关系如下：</li>
-</ul>
-<blockquote>
-<p>鲸逖中心：完成学业。<br>茂伊约：中央办公室工作。<br>星外某星系：为偏地殖民者提供霸主的科技以实现霸主的文明扩张。<br>旋转星：为霸主捕杀低智商智慧生物泽普棱。<br>嘉登：强迫湿地马人移居到干旱地区导致其灭亡。<br>希伯伦：帮助犹太移民灭杀赛内赛·阿鲁伊特人实现对希伯伦的统治。<br>布雷西亚：领事。参与了悦石对驱逐者的计划，引发布雷西亚战争。计算驱逐者抵达布雷西亚的时间时出现了几个月的误差，导致妻子在首轮轰炸中死亡，儿子在战争后的难民营附近被己方在战争中埋下的饵雷炸死。<br>驱逐者领土：霸主外交官。故意被驱逐者抓获，却以为双面间谍身份意图说服驱逐者不要进攻海伯利安，意外得知天大之误的真相，后驱逐者给其一个能够打开光阴冢的装置以应对霸主。<br>海伯利安：任总督十一年。杀掉与他合作的驱逐者军官安迪尔，在驱逐者的计划外打开了光阴冢，释放了伯劳。<br>希莉：领事的祖母，茂伊约的政治领袖，亲眼目睹了茂伊约被霸主吞并的过程，无力阻挡霸主兼并茂伊约的进程。<br>梅闰：领事的祖父，目睹并参与霸主兼并茂伊约的全过程。认为霸主兼并其它星球的过程失去了人性，在兼并仪式中策划爆炸以阻碍进程。<br>东尼尔：领事的父亲，霸主议员。<br>莉拉：领事的姐姐。茂伊约叛乱军军人，在岛屿战争中被杀。<br>格列莎：领事的妻子，也是其祖母希莉的表亲贝托尔的血系。<br>安迪尔：与领事合作的驱逐者军官。</p>
-</blockquote>
-<ul>
-<li>济慈：1795 - 1821（26岁）。英国伦敦人，浪漫派诗人。曾著诗《海伯利安》。与女友芬妮·布朗浪漫的爱情无疾而终。23 岁时照顾患重肺结核的弟弟，弟弟去世后的两年，济慈也患上了肺结核，痴情的济慈在死后与芬妮留给他的一缕头发葬在一起。</li>
-<li>西奥：海伯利安总督，领事的继任。</li>
-<li>斯坦·列维斯基：西塞罗酒吧老板，领事旧识。</li>
-<li>贝提克：接引七人朝圣的机器人，完成后可以获得自由。</li>
-</ul>
-<hr>
-<p><img src="http://ouwsyml4w.bkt.clouddn.com/untitled.png" alt="GitHub set up"></p>
-<hr>
-<p><img src="http://ouwsyml4w.bkt.clouddn.com/1.png" alt="GitHub set up"></p>
-
-          
+          笔记——《海伯利安的陨落-The-Fall-of-Hyperion》（大量剧透）
+鉴于书中人物关系、政治关系、地点繁多等足以混乱对故事理解的因素，作此笔记以梳理。在梳理的过程中从对海伯利安初读的朦胧转变为对故事错综性的惊叹，六位主角经历中的细节安排，全局呼应的布置，无一不让这部小说呈现出如此精彩丰富
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/29/综合性文章图片测试/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
